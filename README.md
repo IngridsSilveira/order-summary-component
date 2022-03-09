@@ -15,7 +15,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Solution here]()
+- Solution URL: [Solution here](https://ingridssilveira.github.io/order-summary-component/)
 ### Built with
 
 - HTML
