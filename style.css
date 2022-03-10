@@ -8,23 +8,24 @@
     margin: 0;
 }
 body {
-    background-color: hsl(225, 100%, 94%);
     background-image: url('images/pattern-background-desktop.svg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
-}
-main {
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
 }
 .card {
     display: flex;
@@ -32,16 +33,11 @@ main {
     align-items: center;
     justify-content: center;
     width: 350px;
-    height: 490px;
     background-color: white;
     border-end-end-radius: 20px;
     border-end-start-radius: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-.imagem {
-    position: absolute;
-    top: 8px;
 }
 .imagem img {
     border-top-left-radius: 20px;
@@ -52,7 +48,6 @@ main {
 .card-texto h1 {
     font-family: 'Red Hat Display', sans-serif;
     color: hsl(223, 47%, 23%);
-    margin-top: 175px;
     margin-left: 65px;
     padding: 8px;
     font-weight: 900;
@@ -139,6 +134,7 @@ main {
 }
 .cancel {
     margin-top: 15px;
+    margin-bottom: 20px;
 }
 .cancel a {
     font-family: 'Red Hat Display', sans-serif;
@@ -173,13 +169,4 @@ footer {
 .attribution a:hover {
     color: hsl(223, 47%, 23%);
     font-weight: 700;
-}
-@media only screen and (min-width: 300px) and (max-width: 700px) {
-    * {
-        margin-top: 5px;
-    }
-    .imagem {
-        position: absolute;
-        top: -2px;
-    }
 }
